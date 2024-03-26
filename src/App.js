@@ -80,13 +80,14 @@ const removeSong = (id) =>{
     let autoEncoded = encodeURIComponent(text)
     let jsonResults = await (searchSongs(autoEncoded));
     console.log('RESULTS: '+JSON.stringify(jsonResults));
-    for(let i=0;i<jsonResults.length;i++){
-      console.log('key: '+ jsonResults[i].id);
-      setTrackList((prev) =>
-         [...prev, <Track key = {jsonResults[i].id} accessKey = {jsonResults[i].id} song = {jsonResults[i].name} artist = {jsonResults[i].artist} album = {jsonResults[i].album} albumCover = {jsonResults[i].albumCover} addSong = {addSong} setPlaylistTracksData = {setPlaylistTracksData} isAdd={true}/>]
-      );
+    // for(let i=0;i<jsonResults.length;i++){
+    //   console.log('key: '+ jsonResults[i].id);
+    //   setTrackList((prev) =>
+    //      [...prev, <Track key = {jsonResults[i].id} accessKey = {jsonResults[i].id} song = {jsonResults[i].name} artist = {jsonResults[i].artist} album = {jsonResults[i].album} albumCover = {jsonResults[i].albumCover} addSong = {addSong} setPlaylistTracksData = {setPlaylistTracksData} isAdd={true}/>]
+    //   );
       
-    }
+    // }
+    setTrackList(jsonResults);
 
   }
   
@@ -97,7 +98,7 @@ const removeSong = (id) =>{
         <h1 className = 'header'>Search Spotify</h1>
         <SearchSection handleSearch = {searchHandler} setText = {setText} />
       </div>
-      <ResultsSection trackList = {trackList} playlistTracksData = {playlistTracksData} />
+      <ResultsSection trackList = {trackList} playlistTracksData = {playlistTracksData} addSong={addSong} removeSong={removeSong} setPlaylistTracksData={setPlaylistTracksData} />
     </div>
   );
 }
