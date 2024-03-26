@@ -1,0 +1,19 @@
+
+
+.loginTab{
+    width: 25svw;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button{
+    width:7rem;
+    height: 3rem;
+    border-radius: 9999px;
+    background-color: #1DB954;
+    font-weight: 600;
+    border: unset
+}
+
+

@@ -1,0 +1,65 @@
+.playlist{
+    border: 2px purple solid;
+    height: 85%;
+    width: 45%;
+    background-color: #B6D0E2;
+}
+
+.header{
+    font-size: 2rem;
+    height: 15%;
+    color: #205E60;
+    text-align: center;
+}
+
+.nameForm{
+    margin-bottom: 1rem;
+    display:flex;
+}
+
+.playlistName{
+    background-color: #B6D0E2;
+    border: none;
+    margin: 0 auto;
+    height: 3rem;
+    color: #205E60;
+    font-size: 1.8rem;
+    text-align: center;
+    width:100%;
+}
+.playlistName:focus{
+    outline:none;
+}
+
+.playlistTracks{
+    height: 63%;
+    list-style-type: none;
+    margin: 0 auto;
+    padding-left: 0;
+    width: 95%;
+    border: 1px green solid;
+}
+
+.createForm{
+    display:flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.saveButton{
+    width: 50%;
+    height: 2.5rem;
+    color: #116F32;
+    margin-top: 1rem;;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: #B6D0E2;
+    border-radius: 9999px;
+}
+
+.saveButton:active{
+background-color: #76B0DA;
+
+}
+

@@ -1,0 +1,21 @@
+.results{
+    height: 85%;
+    border: purple solid 2px;
+    width: 45%;
+    background-color: #B6D0E2;
+}
+
+.resultsHeader{
+    font-size: 2rem;
+    height: 15%;
+    color: #205E60;
+    text-align: center;
+}
+.trackList{
+    margin:0 auto;
+    width:95%;
+    list-style-type: none;
+    padding-left:0;
+    overflow:scroll;
+    height:85%;
+}

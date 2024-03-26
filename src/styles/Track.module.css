@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+}
+
+.track{
+    display: grid;
+    height: 3rem;
+    grid-template-areas: 
+    "img song album add"
+    "img artist album add";
+    width: 100%;
+    margin:0 auto;
+    background-color: #8F4DDF;
+    align-items: center;
+    grid-template-columns: 64px 1fr 1fr;
+    grid-template-rows: 1.5rem 1.5rem;
+    /*overflow:hidden*/
+    border: 1px purple solid;
+ 
+}
+
+.song{
+    font-size: .6rem;
+    grid-area: song;
+    margin-left: 1rem;
+    color: #FFFFFF;
+    overflow: hidden;
+    width:80%;
+    
+}
+h2{
+    
+    margin-top: 0;
+    margin-bottom:0;
+    white-space: nowrap;
+}
+
+.artist{
+    grid-area: artist;
+    align-self: center;
+    font-size: .7rem;
+    margin-left: 1rem;
+    margin-top: 0;
+    color: white;
+    
+}
+.album{
+    grid-area: album;
+    font-size: .8rem;
+    align-self: center;
+    color: white;
+    overflow:hidden;
+    width: 90%
+
+    /*justify-self: center;*/
+}
+
+img{
+    height: 3rem;
+    grid-area: img;
+    align-self: center;
+}
+
+#add{
+    grid-area: add;
+    color: white;
+    margin-right: 1rem;
+}
+
+#add:hover{
+    cursor: pointer;
+}
+

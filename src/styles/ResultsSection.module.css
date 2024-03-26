@@ -1,0 +1,7 @@
+.right{
+    width: 75svw;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly
+}
+
